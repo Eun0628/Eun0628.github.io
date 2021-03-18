@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tic Tace Toe</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/master.js"></script>
+</head>
+<body>
+
+	<table>
+		<tr>
+			<td class="odd"></td>
+			<td class="even"></td>
+			<td class="odd"></td>
+		</tr>
+		<tr>
+			<td class="even"></td>
+			<td class="odd"></td>
+			<td class="even"></td>
+		</tr>
+		<tr>
+			<td class="odd"></td>
+			<td class="even"></td>
+			<td class="odd"></td>
+		</tr>
+	</table>
+	<br>
+
+<div id="gameArea">
+	<div id="gameBoard">
+	<script>
+		/*
+		for (var n = 1; n <= 5000; n++) {
+			documnet.writeln(n + "<br>");
+		}
+
+		var counter = 0;
+		var builder = "<table>";
+		for (var n = 0; n < 3; n++) {
+			builder += "<tr>";
+			for (var i = 0; i < 3; i++) {
+				if (counter % 2 == 0) {
+					builder += "<td class='even'></td>"
+				} else {
+					builder += "<td class='odd'></td>"
+				}
+			}
+
+			builder += "</tr>";
+		}
+		builder += "</table>";
+		document.writeln(builder);
+		*/
+	</script>
+	</div>
+	<div id="playerInfo">
+		Player 1&nbsp;&nbsp;
+		<input type="text" id="player1Name" placeholder="Please enter your name" size="20" />
+		<br>
+		<br>
+		<select id="player1Image" onchange="enterPlayer('player1')">
+			<option value="#">-- Select your avatar --</option>
+			<option value="Takoyaki">Takoyaki</option>
+			<option value="육회">육회</option>
+			<option value="갈비">갈비</option>
+		</select>
+		<div id="player1Info"></div>
+		<br>
+		<hr>
+		Player 2&nbsp;&nbsp;
+		<input type="text" id="player2Name" placeholder="Please enter your name" size="20" />
+		<br>
+		<br>
+		<select id="player2Image" onchange="enterPlayer('player2')">
+			<option value="#">-- Select your avatar --</option>
+			<option value="SmokedSalmon">Smoked Salmon</option>
+			<option value="붕어빵">붕어빵</option>
+			<option value="호떡">호떡</option>
+		</select>
+		<div id="player2Info"></div>
+		<br>
+	</div>
+</div>
+
+	<br>
+	<button onclick="isPalindrome()">Check Palindrome</button>
+	<br>
+	<br>
+	<button onclick="romanDictionary('X')">Check Roman</button>
+	<br>
+	<br>
+	<button onclick="convertRoman()">Convert Roman</button>
+</body>
+</html>
