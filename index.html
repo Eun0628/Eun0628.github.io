@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>All About Eunchae</title>
+<script>
+	function isPrime(x) {
+		var prime = true;
+
+		for (var n = 2; n <= Math.sqrt(x); n++) {
+			if (x % n == 0) {
+				prime = false;
+				break;
+			} else {
+				continue;
+			}
+		}
+		return prime;
+	}
+	function greatestPrime() {
+		var t0 = performance.now();
+		var x = 1000000000;
+		for (var n = x; n >= 1; n--) {
+			if (isPrime(n)) {
+				var t1 = performance.now();
+
+				alert(n + "\nCall tok " + (t1 - t0) + " milliseconds");
+				break;
+			} else {
+				continue;
+			}
+		}
+	}
+</script>
+</head>
+<body>
+	<h1>Hello World! This is Eunchae's First Webpage!</h1>
+	<h2>My Hobbies</h2>
+	<ul>
+		<li>Listening to Music</li>
+		<li>Sleeping</li>
+		<li>Cooking</li>
+		<li>Reading</li>
+		<li>Gaming</li>
+		<ol type="a">
+			<li>Paladins</li>
+			<li>Stardew Valley</li>
+			<li>Little Nightmares</li>
+		</ol>
+	</ul>
+	<hr>
+	<b>My Favorite Website:</b> <a href="https://www.amazon.com" target="_blank">Amazon</a>
+	<br>
+	<i>My Favorite Pokemon:</i>
+	<img src="images/Mimikyu2.png"/>
+	<img src="images/Mimikyu.jpg"/>
+	<br>
+	<u>My Social Media</u>
+	<br>
+	<a href="https://www.instagram.com/eunk0628" target="_blank"><img src="images/instagram.png"/></a>&nbsp;
+	<a href=""><img src="images/facebook.png"/></a>&nbsp;
+	<a href=""><img src="images/twitter.png"/></a>&nbsp;
+	<a href=""><img src="images/linkedin.png"/></a>&nbsp;
+	<a href=""><img src="images/snapchat.png"/></a>&nbsp;
+	<a href=""><img src="images/tiktok.png"/></a>&nbsp;
+	<br>
+	<br>
+	<table border="1">
+		<tr>
+			<th>Me</th>
+			<th>Mom</th>
+			<th>Dad</th>
+			<th>Sister</th>
+		</tr>
+		<tr>
+			<td><img src="images/eunchae.jpg"/></td>
+			<td><img src="images/mom.jpg"/></td>
+			<td><img src="images/dad.jpg"/></td>
+			<td><img src="images/멍청이.jpg"/></td>
+		</tr>
+		<tr>
+			<td rowspan="2">My Crush</td>
+			<td colspan="3">조규현</td>
+		</tr>
+		<tr>
+			<td colspan="3"><img src="images/kyuhyun.jpg"/></td>
+		</tr>
+	</table>
+	<br>
+	<button onclick="greatestPrime()">Check Prime</button>
+</body>
+</html>
