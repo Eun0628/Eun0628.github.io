@@ -1,0 +1,30 @@
+.even {
+	background-color: #84FFFF;
+	width: 200px;
+	height: 200px;
+}
+
+.odd {
+	background-color: #FFFFFF;
+	width: 200px
+	height: 200px;
+}
+
+table {
+	border: 2px solid black;
+}
+
+td {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #D1D1D1;
+}
+
+#gameBoard {
+	display: inline-block;
+}
+
+#playerInfo {
+	display: inline-block;
+	vertical-align: top;
+}
