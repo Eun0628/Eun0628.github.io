@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS!</title>
+<script>
+	function changeCss() {
+		var targetDiv = document.getElementById("innerDiv2");
+		targetDiv.style.backgroundColor = "#20E1FF";
+	}
+</script>
+<style>
+	body {
+	font-family: Arial, sans-serif;
+	background-color: #F9EAC0;
+	}
+	div {
+		border: 2px solid #0000FF;
+		border-radius: 15px 5px 15px 5px;
+		padding: 20px 5px 20px 5px;
+		margin: 20px;
+		background-color: #FF0000;
+		/* background-image: url("images/멍청이.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		*/
+	}
+
+	div:hover {
+		background-color: #FFFFFF;
+	}
+
+	div:active {
+		background-color: #000000;
+	}
+
+	span {
+		background-color: #F2F517;
+		color: #0C8719;
+		border: 1px dotted black;
+	}
+
+	#innerDiv1 {
+		background-color: #FFFFFF;
+		color: #0000FF;
+	}
+
+	#innerDiv2 {
+		background-color: #EA8AF4;
+		color: #0A3AA9;
+	}
+
+	.insideSpan {
+		background-color: #2CF05E;
+		color: #8520FF;
+	}
+</style>
+</head>
+<body>
+	<div> 
+		Here is a div
+		<div id="innerDiv1" onclick="changeCss()">Div <span class="insideSpan">inside</span> a div! 1 <span>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+		<div id="innerDiv2">Div <span class="insideSpan">inside</span> a div! 2 <span>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+	</div>
+	<div style="background-color: #FF9D00;">Here is a div</div>
+	<div style="background-color: #FFFB00;">Here is a div</div>
+	<div style="background-color: #33FF00;">Here is a div</div>
+	<div style="background-color: #00FFFF;">Here is a div</div>
+	<div style="background-color: #0033FF;">Here is a div</div>
+	<div style="background-color: #9500FF;">Here is a div</div>
+</body>
+</html>
