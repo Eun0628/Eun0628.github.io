@@ -7,50 +7,46 @@
 </head>
 <body>
 
+<!--
 	<table>
 		<tr>
-			<td class="odd"></td>
-			<td class="even"></td>
-			<td class="odd"></td>
+			<td class="odd" id="square0" onclick="changesqare('square0')"></td>
+			<td class="even" id="square1" onclick="changesqare('square1')"></td>
+			<td class="odd" id="square2" onclick="changesqare('square2')"></td>
 		</tr>
 		<tr>
-			<td class="even"></td>
-			<td class="odd"></td>
-			<td class="even"></td>
+			<td class="even" id="square3" onclick="changesqare('square3')"></td>
+			<td class="odd" id="square4" onclick="changesqare('square4')"></td>
+			<td class="even" id="square5" onclick="changesqare('square5')"></td>
 		</tr>
 		<tr>
-			<td class="odd"></td>
-			<td class="even"></td>
-			<td class="odd"></td>
+			<td class="odd" id="square6" onclick="changesqare('square6')"></td>
+			<td class="even" id="square7" onclick="changesqare('square7')"></td>
+			<td class="odd" id="square8" onclick="changesqare('square8')"></td>
 		</tr>
 	</table>
 	<br>
+-->
 
 <div id="gameArea">
 	<div id="gameBoard">
 	<script>
-		/*
-		for (var n = 1; n <= 5000; n++) {
-			documnet.writeln(n + "<br>");
-		}
-
 		var counter = 0;
 		var builder = "<table>";
 		for (var n = 0; n < 3; n++) {
 			builder += "<tr>";
 			for (var i = 0; i < 3; i++) {
 				if (counter % 2 == 0) {
-					builder += "<td class='even'></td>"
+					builder += "<td onclick='changeSquare(\"square" + counter + "\")' class='even' id='square" + counter + "'></td>";
 				} else {
-					builder += "<td class='odd'></td>"
+					builder += "<td onclick='changeSquare(\"square" + counter + "\")' class='odd' id='square" + counter + "'></td>";
 				}
+			counter++;
 			}
-
 			builder += "</tr>";
 		}
 		builder += "</table>";
 		document.writeln(builder);
-		*/
 	</script>
 	</div>
 	<div id="playerInfo">
@@ -78,11 +74,15 @@
 			<option value="호떡">호떡</option>
 		</select>
 		<div id="player2Info"></div>
-		<br>
 	</div>
 </div>
-
+	
 	<br>
+	<button onclick="reset()">Reset Board</button>
+
+</body>
+</html>
+<!--
 	<button onclick="isPalindrome()">Check Palindrome</button>
 	<br>
 	<br>
@@ -90,5 +90,4 @@
 	<br>
 	<br>
 	<button onclick="convertRoman()">Convert Roman</button>
-</body>
-</html>
+-->
